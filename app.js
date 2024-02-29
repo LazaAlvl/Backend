@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors({
-  origin: 'http://localhost:4200',
+  origin: 'https://frontend-mocha-eta.vercel.app',
   credentials: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
